@@ -1,0 +1,6 @@
+name: ConodiaLinks
+version: '${project.version}'
+main: fr.pandaguerrier.conodia.ConodiaLinks
+commands:
+  link:
+    description: Link votre compte discord à minecraft
