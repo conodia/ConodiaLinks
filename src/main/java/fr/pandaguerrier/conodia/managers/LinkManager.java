@@ -7,7 +7,7 @@ import org.json.simple.JSONObject;
 
 public class LinkManager {
     private String code;
-    private Player player;
+    private final Player player;
 
     public LinkManager(String code, Player player) {
         this.code = code;
@@ -33,7 +33,6 @@ public class LinkManager {
         if(!payload.containsKey("player")) return null;
 
         JSONObject playerObj = (JSONObject) payload.get("player");
-
         return new DiscordLinkPlayer(code, playerObj.get("discord_user_id").toString(), playerObj.get("discord_username").toString(), player.getUniqueId().toString());
     }
 }

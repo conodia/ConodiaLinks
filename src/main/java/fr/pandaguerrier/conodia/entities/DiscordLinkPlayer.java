@@ -1,10 +1,10 @@
 package fr.pandaguerrier.conodia.entities;
 
 public class DiscordLinkPlayer {
-    private String code;
-    private String discordId;
-    private String discordUsername;
-    private String minecraftUuid;
+    private final String code;
+    private final String discordId;
+    private final String discordUsername;
+    private final String minecraftUuid;
     private boolean linked;
 
     public DiscordLinkPlayer(String code, String discordId, String discordUsername, String minecraftUuid) {

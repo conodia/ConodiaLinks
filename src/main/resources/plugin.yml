@@ -1,6 +1,7 @@
 name: ConodiaLinks
 version: '${project.version}'
 main: fr.pandaguerrier.conodia.ConodiaLinks
+depend: [ConodiaGameAPI]
 commands:
   link:
     description: Link votre compte discord à minecraft
